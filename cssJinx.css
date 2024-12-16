@@ -7,12 +7,10 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333333;
+    color: #ffffff;
     background-color: #5c5c5c;
-    background-image: url('images/jinxGraffiti.png'), url('images/jinxGraffiti2.png'), url('images/jinxGraffiti.png'), url('images/jinxGraffiti2.png');
-    background-repeat: no-repeat;
-    background-position: top left, top right, bottom left, bottom right;
-    background-size: 35%;
+    background-image: url('images/graffitiJinxGif.gif');
+    background-size: 40%;
 }
 
 
@@ -60,7 +58,7 @@ body {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #FFFFFF;
+    background-color: #000000;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
