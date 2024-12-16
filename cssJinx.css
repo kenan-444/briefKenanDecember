@@ -15,6 +15,8 @@ body {
     background-size: 35%;
 }
 
+
+
 .header {
     text-align: center;
     padding: 20px;
@@ -65,7 +67,8 @@ body {
 }
 
 .section__title {
-    font-size: 2rem;
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 4rem;
     margin-bottom: 20px;
     color: #FF00FF;
 }
