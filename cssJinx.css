@@ -28,7 +28,10 @@ body {
     max-width: 1100px;
     border-radius: 10px;
 }
-
+.header__caption {
+    color: #058a4c;
+    font-style: italic;
+}
 .header__menu {
     display: flex;
     justify-content: center;
@@ -89,6 +92,10 @@ body {
 
 .gallery__img:hover {
     transform: scale(1.1);
+}
+
+.section__text--hidden {
+    display: none;
 }
 
 .button {
