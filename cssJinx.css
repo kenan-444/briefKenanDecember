@@ -97,6 +97,7 @@ body {
 
 .section__text--hidden {
     display: none;
+    color: #ffffff;
 }
 
 .button {
