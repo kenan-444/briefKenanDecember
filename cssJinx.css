@@ -8,7 +8,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #ffffff;
-    background-color: #5c5c5c;
+    background-color: #ffffff;
     background-image: url('images/graffitiJinxGif.gif');
     background-size: 40%;
 }
@@ -73,7 +73,7 @@ body {
 
 .section__text {
     font-size: 1.2rem;
-    color: #333333;
+    color: #ffffff;
 }
 
 .gallery {
