@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de Jinx</title>
+    <link rel="stylesheet" href="cssJinx.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/jinxLogo.png" alt="Logo Jinx" class="header__logo">
+        <figure class="header__image">
+            <img src="images/jinxGif.gif" alt="Animation du personnage" class="header__img">
+            <figcaption class="header__caption">L'icône explosive de Zaun</figcaption>
+        </figure>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li><a href="#biographie">Biographie</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#citations">Citations</a></li>
+                <li><a href="#secret">Secret</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="graffiti graffiti-top-left"></div>
+<div class="graffiti graffiti-top-right"></div>
+<div class="graffiti graffiti-bottom-left"></div>
+<div class="graffiti graffiti-bottom-right"></div>
+    <section id="biographie" class="section">
+        <h2 class="section__title">Biographie</h2>
+        <p class="section__text">Jinx est un personnage fictif emblématique de l'univers de League of Legends. Introduite en 2013 en tant que champion jouable, elle a marqué les esprits grâce à son clip promotionnel explosif : <a href="https://www.youtube.com/watch?v=0nlJuwO0GDs" target="_blank" rel="noopener noreferrer">
+            <strong>"Get Jinxed"</strong>
+        </a>.</p> <br>
+        <p  class="section__text">En 2021, elle fait un retour fracassant dans la série Netflix <a href="https://www.youtube.com/watch?v=fXmAurh012s" target="_blank" rel="noopener noreferrer">
+            <strong>"Arcane"</strong>,</a> révélant une version plus humaine et complexe d'elle-même.</p>
+    </section>
+
+    <section id="galerie" class="section">
+        <h2 class="section__title">Galerie</h2>
+        <div class="gallery">
+            <img src="images/jinxImg1.webp" alt="Jinx en action" class="gallery__img">
+            <img src="images/jinxImg2.webp" alt="Portrait de Jinx" class="gallery__img">
+            <img src="images/jinxImg3.png" alt="Jinx avec ses armes" class="gallery__img">
+            <img src="images/jinxImg4.jpg" alt="Jinx explosive" class="gallery__img">
+        </div>
+    </section>
+
+        <section id="secret" class="section section--secret">
+            <h2 class="section__title">Secret</h2>
+            <button id="reveal-secret-btn" class="button">Dévoiler le secret</button>
+            <p id="secret-text" class="section__text section__text--hidden">Jinx prend Poiscaille (son flingue) et le fait parler comme une marionnette.</p>
+        </section>
+
+        <section id="contact" class="section section--contact">
+            <h2 class="section__title">Contactez Jinx</h2>
+            <form id="contact-form" class="form">
+                <label for="name" class="form__label">Nom :</label>
+                <input type="text" id="name" class="form__input" required>
+                <label for="email" class="form__label">Email :</label>
+                <input type="email" id="email" class="form__input" required>
+                <label for="message" class="form__label">Message :</label>
+                <textarea id="message" rows="5" class="form__textarea" required></textarea>
+                <button type="submit" class="button button--submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 Présentation de Jinx | Mentions légales</p>
+    </footer>
+
+    <script src="jsJinx.js"></script>
+</body>
+</html>
