@@ -23,7 +23,7 @@ body {
 }
 
 .header__logo {
-    max-width: 250px;
+    max-width: 340px;
 }
 
 .header__img {
@@ -129,6 +129,8 @@ body {
 }
 
 .form__label {
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 2rem;
     font-weight: bold;
     text-align: left;
 }
