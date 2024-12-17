@@ -25,7 +25,7 @@ body {
 }
 
 .header__img {
-    max-width: 1100px;
+    max-width: 3100px;
     border-radius: 10px;
 }
 .header__caption {
@@ -97,7 +97,13 @@ body {
 
 .section__text--hidden {
     display: none;
-    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.section__text--visible {
+    display: block;
+    opacity: 1;
 }
 
 .button {
@@ -156,4 +162,90 @@ body {
     color: #FFFFFF;
     font-size: 0.9rem;
     border-top: 3px solid #FF00FF;
+}
+
+/* phone */
+@media screen and (max-width: 768px) {
+    .header__logo {
+        max-width: 200px; /* Réduction du logo */
+    }
+
+    .header__img {
+        max-width: 100%; /* Adapte l'image principale */
+        height: auto;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header__menu li {
+        margin: 10px 0; /* Espacement pour les éléments */
+    }
+
+    .section {
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .gallery__img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .form__label {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .section__title {
+        font-size: 2.5rem; /* Réduction des titres */
+    }
+
+    .gallery__img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .form__label {
+        font-size: 1.2rem;
+    }
+
+    .form__input,
+    .form__textarea {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+.header__switch {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.switch-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00BFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.switch-button.active {
+    background-color: #FF00FF;
+}
+
+.switch-button:hover {
+    transform: scale(1.1);
 }
