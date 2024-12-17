@@ -13,17 +13,13 @@ body {
     background-size: 40%;
 }
 
-
-
 .header {
     text-align: center;
     padding: 20px;
 }
-
 .header__logo {
     max-width: 340px;
 }
-
 .header__img {
     max-width: 3100px;
     border-radius: 10px;
@@ -38,21 +34,19 @@ body {
     list-style: none;
     margin-top: 20px;
 }
-
 .header__menu li {
     margin: 0 15px;
 }
-
 .header__menu a {
     text-decoration: none;
     color: #FF00FF;
     font-weight: bold;
     transition: color 0.3s ease;
 }
-
 .header__menu a:hover {
     color: #00BFFF;
 }
+
 
 .section {
     max-width: 800px;
@@ -63,18 +57,17 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .section__title {
     font-family: 'Jolly Lodger', cursive;
     font-size: 4rem;
     margin-bottom: 20px;
     color: #FF00FF;
 }
-
 .section__text {
     font-size: 1.2rem;
     color: #ffffff;
 }
+
 
 .gallery {
     display: flex;
@@ -82,7 +75,6 @@ body {
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .gallery__img {
     width: 200px;
     height: 200px;
@@ -90,21 +82,21 @@ body {
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
-
 .gallery__img:hover {
     transform: scale(1.1);
 }
+
 
 .section__text--hidden {
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
-
 .section__text--visible {
     display: block;
     opacity: 1;
 }
+
 
 .button {
     display: block;
@@ -119,11 +111,11 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-
 .button:hover {
     background-color: #FF00FF;
     transform: scale(1.05);
 }
+
 
 .form {
     display: flex;
@@ -132,14 +124,12 @@ body {
     margin: 0 auto;
     max-width: 500px;
 }
-
 .form__label {
     font-family: 'Jolly Lodger', cursive;
     font-size: 2rem;
     font-weight: bold;
     text-align: left;
 }
-
 .form__input,
 .form__textarea {
     padding: 10px;
@@ -148,12 +138,12 @@ body {
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
-
 .form__input:focus,
 .form__textarea:focus {
     border-color: #FF00FF;
     outline: none;
 }
+
 
 .footer {
     text-align: center;

@@ -64,7 +64,7 @@ function switchCharacter(character) {
         headerImage.alt = "Animation de Powder";
         logo.src = "images/powderLogo.png";
         sectionTitle.textContent = "Biographie de POWDER";
-        biographieText.textContent = "Powder est une version de Jinx dans une version alternative où elle n'a pas vécu son trauma d'enfance. On voit qu'elle vit paisiblement, sans folie. On peut la voir dans la saison 2 d'Arcane.";
+        biographieText.textContent = "Powder est une version de Jinx dans une version alternative où elle n'a pas vécu son trauma d'enfance. On voit qu'elle vit paisiblement, sans folie. On peut la voir dans la saison 2 d'Arcane, surtout dans la magnifique chanson de Stromae et Pomme.";
         gallery.innerHTML = `
             <img src="images/powderImg1.gif" alt="Powder jeune" class="gallery__img">
             <img src="images/powderImg2.gif" alt="Powder triste" class="gallery__img">
