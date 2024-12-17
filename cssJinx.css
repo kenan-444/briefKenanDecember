@@ -164,14 +164,14 @@ body {
     border-top: 3px solid #FF00FF;
 }
 
-/* phone */
+/* pour les tels */
 @media screen and (max-width: 768px) {
     .header__logo {
-        max-width: 200px; /* Réduction du logo */
+        max-width: 200px; 
     }
 
     .header__img {
-        max-width: 100%; /* Adapte l'image principale */
+        max-width: 100%; 
         height: auto;
     }
 
@@ -181,7 +181,7 @@ body {
     }
 
     .header__menu li {
-        margin: 10px 0; /* Espacement pour les éléments */
+        margin: 10px 0; 
     }
 
     .section {
@@ -201,7 +201,7 @@ body {
 
 @media screen and (max-width: 480px) {
     .section__title {
-        font-size: 2.5rem; /* Réduction des titres */
+        font-size: 2.5rem;
     }
 
     .gallery__img {

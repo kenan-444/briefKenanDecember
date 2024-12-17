@@ -31,13 +31,13 @@ const sections = document.querySelectorAll('.section');
 const titles = document.querySelectorAll('.section__title');
 const texts = document.querySelectorAll('.section__text');
 
-// Fonction pour basculer entre Jinx et Powder
+
 function switchCharacter(character) {
     if (character === 'jinx') {
         body.classList.add('jinx-active');
         body.classList.remove('powder-active');
         body.style.backgroundImage = "url('images/graffitiJinxGif.gif')";
-        body.style.backgroundSize = "40%"; // Taille de fond pour Jinx
+        body.style.backgroundSize = "40%"; 
         headerImage.src = "images/jinxGif.gif";
         headerImage.alt = "Animation de Jinx";
         logo.src = "images/jinxLogo.png";
@@ -49,9 +49,9 @@ function switchCharacter(character) {
             <img src="images/jinxImg3.jpg" alt="Jinx avec ses armes" class="gallery__img">
         `;
 
-        sections.forEach(section => section.style.backgroundColor = '#000'); // Fond noir pour Jinx
-        titles.forEach(title => title.style.color = '#FF00FF'); // Titres violets pour Jinx
-        texts.forEach(text => text.style.color = '#FFF'); // Textes blancs pour Jinx
+        sections.forEach(section => section.style.backgroundColor = '#000'); 
+        titles.forEach(title => title.style.color = '#FF00FF'); 
+        texts.forEach(text => text.style.color = '#FFF'); 
 
         btnJinx.classList.add('active');
         btnPowder.classList.remove('active');
@@ -59,28 +59,28 @@ function switchCharacter(character) {
         body.classList.add('powder-active');
         body.classList.remove('jinx-active');
         body.style.backgroundImage = "url('images/graffitiPowder.jpg')";
-        body.style.backgroundSize = "100%"; // Taille 100% pour Powder
+        body.style.backgroundSize = "100%"; 
         headerImage.src = "images/powderGif.gif";
         headerImage.alt = "Animation de Powder";
         logo.src = "images/powderLogo.png";
         sectionTitle.textContent = "Biographie de POWDER";
         biographieText.textContent = "Powder est une version de Jinx dans une version alternative où elle n'a pas vécu son trauma d'enfance. On voit qu'elle vit paisiblement, sans folie. On peut la voir dans la saison 2 d'Arcane.";
         gallery.innerHTML = `
-            <img src="images/powderImg1.jpg" alt="Powder jeune" class="gallery__img">
-            <img src="images/powderImg2.jpg" alt="Powder triste" class="gallery__img">
-            <img src="images/powderImg3.jpg" alt="Powder enfant" class="gallery__img">
+            <img src="images/powderImg1.gif" alt="Powder jeune" class="gallery__img">
+            <img src="images/powderImg2.gif" alt="Powder triste" class="gallery__img">
+            <img src="images/powderImg3.gif" alt="Powder enfant" class="gallery__img">
         `;
 
-        sections.forEach(section => section.style.backgroundColor = '#FFF'); // Fond blanc pour Powder
-        titles.forEach(title => title.style.color = '#00BFFF'); // Titres bleus clairs pour Powder
-        texts.forEach(text => text.style.color = '#000'); // Textes noirs pour Powder
+        sections.forEach(section => section.style.backgroundColor = '#FFF'); 
+        titles.forEach(title => title.style.color = '#00BFFF'); 
+        texts.forEach(text => text.style.color = '#000'); 
 
         btnPowder.classList.add('active');
         btnJinx.classList.remove('active');
     }
 }
 
-// Écouteurs d'événements sur les boutons
+
 btnJinx.addEventListener('click', () => switchCharacter('jinx'));
 btnPowder.addEventListener('click', () => switchCharacter('powder'));
 
