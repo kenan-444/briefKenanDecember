@@ -15,7 +15,7 @@ contactForm.addEventListener('submit', (event) => {
         contactMessage.textContent = 'Erreur : Le message doit contenir au moins un caractère.';
         contactMessage.style.color = 'red';
     } else {
-        contactMessage.textContent = 'Message envoyé avec succès !';
+        contactMessage.textContent = 'Elle a reçu votre message avec succès !';
         contactMessage.style.color = 'green';
         contactForm.reset(); 
     }
@@ -68,7 +68,7 @@ function switchCharacter(character) {
         headerImage.alt = "Animation de Powder";
         logo.src = "images/powderLogo.png";
         sectionTitle.textContent = "Biographie de POWDER";
-        biographieText.innerHTML = `Powder est une version de Jinx dans une version alternative où elle n'a pas vécu son trauma d'enfance. On voit qu'elle vit paisiblement, sans folie. On peut la voir dans la saison 2 d'Arcane, surtout dans la magnifique chanson de <a href="https://www.youtube.com/watch?v=ro1asnqR3Bs" target="_blank" rel="noopener noreferrer">Stromae et Pomme</a>.`;
+        biographieText.innerHTML = `Powder est Jinx dans une version alternative où elle n'a pas vécu son trauma d'enfance. On voit qu'elle vit paisiblement, sans folie. On peut la retrouver dans la saison 2 d'Arcane, et dans la magnifique chanson de <a href="https://www.youtube.com/watch?v=orxCH7LzJ9c" target="_blank" rel="noopener noreferrer">Stromae et Pomme</a>.`;
         gallery.innerHTML = `
             <img src="images/powderImg1.gif" alt="Powder jeune" class="gallery__img">
             <img src="images/powderImg2.gif" alt="Powder triste" class="gallery__img">
