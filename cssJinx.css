@@ -239,3 +239,20 @@ body {
 .switch-button:hover {
     transform: scale(1.1);
 }
+
+#contactTitle {
+    font-family: 'Jolly Lodger', cursive;
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #FF00FF;
+}
+
+body.powder-active #contactTitle {
+    color: #00BFFF;
+}
+
+
+body.jinx-active #contactTitle {
+    color: #FF00FF; 
+}
+

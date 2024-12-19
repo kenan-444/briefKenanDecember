@@ -7,20 +7,22 @@ revealSecretButton.addEventListener('click', () => {
 
 const contactForm = document.querySelector('#contact-form');
 const messageInput = document.querySelector('#message');
+const contactMessage = document.querySelector('#contact-message');
 
 contactForm.addEventListener('submit', (event) => {
-    if (messageInput.value.length < 1) {
-        alert('Le message doit contenir quelque chose.');
-        event.preventDefault();
+    event.preventDefault(); 
+    if (messageInput.value.trim().length < 1) {
+        contactMessage.textContent = 'Erreur : Le message doit contenir au moins un caractère.';
+        contactMessage.style.color = 'red';
     } else {
-        event.preventDefault();
-        alert('Message envoyé avec succès !');
-        contactForm.reset();
+        contactMessage.textContent = 'Message envoyé avec succès !';
+        contactMessage.style.color = 'green';
+        contactForm.reset(); 
     }
 });
 
-const btnJinx = document.getElementById('btn-jinx');
-const btnPowder = document.getElementById('btn-powder');
+const btnJinx = document.getElementById("btn-jinx");
+const btnPowder = document.getElementById("btn-powder");
 const body = document.body;
 const headerImage = document.querySelector('.header__img');
 const logo = document.querySelector('.header__logo');
@@ -48,6 +50,8 @@ function switchCharacter(character) {
             <img src="images/jinxImg2.webp" alt="Portrait de Jinx" class="gallery__img">
             <img src="images/jinxImg3.jpg" alt="Jinx avec ses armes" class="gallery__img">
         `;
+        contactTitle.textContent = "Contactez Jinx";
+        secretText.textContent = "Jinx adore prendre Poiscaille (son flingue) et le faire parler comme une marionnette.";
 
         sections.forEach(section => section.style.backgroundColor = '#000'); 
         titles.forEach(title => title.style.color = '#FF00FF'); 
@@ -70,6 +74,10 @@ function switchCharacter(character) {
             <img src="images/powderImg2.gif" alt="Powder triste" class="gallery__img">
             <img src="images/powderImg3.gif" alt="Powder enfant" class="gallery__img">
         `;
+        contactTitle.textContent = "Contactez Powder";
+        secretText.textContent = "Le secret de Powder : Elle adore dessiner des étoiles dans son carnet.";
+
+        
 
         sections.forEach(section => section.style.backgroundColor = '#FFF'); 
         titles.forEach(title => title.style.color = '#00BFFF'); 
@@ -78,9 +86,12 @@ function switchCharacter(character) {
         btnPowder.classList.add('active');
         btnJinx.classList.remove('active');
     }
+    
 }
 
 
 btnJinx.addEventListener('click', () => switchCharacter('jinx'));
 btnPowder.addEventListener('click', () => switchCharacter('powder'));
+
+
 
