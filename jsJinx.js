@@ -98,20 +98,20 @@ const lightbox = document.querySelector('.lightbox');
 const lightboxImg = document.querySelector('.lightbox__img');
 const closeBtn = document.querySelector('.lightbox__close');
 
-// Ouvrir le lightbox avec l'image cliquée
+
 images.forEach((image) => {
     image.addEventListener('click', () => {
-        lightboxImg.src = image.src; // Remplacer l'image dans le lightbox
+        lightboxImg.src = image.src; 
         lightbox.classList.add('visible');
     });
 });
 
-// Fermer le lightbox
+
 closeBtn.addEventListener('click', () => {
     lightbox.classList.remove('visible');
 });
 
-// Fermer le lightbox en cliquant en dehors de l'image
+
 lightbox.addEventListener('click', (event) => {
     if (event.target === lightbox) {
         lightbox.classList.remove('visible');
